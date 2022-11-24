@@ -52,4 +52,27 @@ query ($_id: String!) {
 {
     "_id": "eu"
 }
+
+# Error received
+{
+    "errors": [
+        {
+            "message": "Cannot read properties of undefined (reading 'header')",
+            "locations": [
+                {
+                    "line": 2,
+                    "column": 5
+                }
+            ],
+            "path": [
+                "blog"
+            ],
+            "extensions": {
+                "code": "INTERNAL_SERVER_ERROR"
+            }
+        }
+    ],
+    "data": null
+}
+
 ```
